@@ -28,18 +28,6 @@ S = 4605            # wetted surface area, [m^2]
 # Loading the data from basin test in the "vasca" matrix 
 vasca = np.loadtxt('prove_rimorchio.txt', delimiter=' ')
 
-'''#imposto percorso assoluto, così il file viene riconosciuto
-import os
-
-# Ottengo il percorso assoluto della directory corrente
-current_directory = os.path.abspath(os.path.dirname(__file__))
-
-# Costruisco il percorso completo al file
-file_path = os.path.join(current_directory, "prove_rimorchio.txt")
-
-# Carico i dati dal file
-vasca = np.loadtxt(file_path, delimiter=' ')'''
-
 # In the first column there are the recorded velocities, V_M
 # in the second column are the corresponding resistance values, RT_M
 
@@ -105,7 +93,7 @@ ax.set_xlabel('$Rn_M$ (-)', fontsize='12')
 ax.grid(True)
 
 plt.legend()
-plt.savefig('CTMCFM.png', dpi=1400, transparent=True)
+plt.savefig('CTMCFM.png', dpi=800, transparent=True)
 #plt.show()
 
 
@@ -121,7 +109,7 @@ ax.set_xlabel('$V_M$ (m/s)', fontsize='12')
 ax.grid(True)
 
 #plt.legend()
-plt.savefig('RTM.png', dpi=1400, transparent=True)
+plt.savefig('RTM.png', dpi=800, transparent=True)
 #plt.show()
 
 
@@ -138,7 +126,7 @@ ax.set_xlabel('$Rn_S$ (-)', fontsize='12')
 ax.grid(True)
 
 plt.legend()
-plt.savefig('CTSCFS.png', dpi=1400, transparent=True)
+plt.savefig('CTSCFS.png', dpi=800, transparent=True)
 #plt.show()
 
 
@@ -154,7 +142,7 @@ ax.set_xlabel('$V_S$ m/s', fontsize='12')
 ax.grid(True)
 
 #plt.legend()
-plt.savefig('RTS.png', dpi=1400, transparent=True)
+plt.savefig('RTS.png', dpi=800, transparent=True)
 #plt.show()
 
 
@@ -170,7 +158,7 @@ ax.set_xlabel('$V_S$ m/s', fontsize='12')
 ax.grid(True)
 
 #plt.legend()
-plt.savefig('P_E.png', dpi=1400, transparent=True)
+plt.savefig('P_E.png', dpi=800, transparent=True)
 #plt.show()
 
 
@@ -206,9 +194,9 @@ with open('eserc1Ship.txt' , 'w') as f:
 
 
 #in case file is missing from the desidered directory
-'''# Ottengo il percorso assoluto della directory corrente
+'''# Obtaining file path from current directory
 current_directory = os.path.abspath(os.path.dirname(__file__))
-# Costruisco il percorso completo al file
+# Building the extended path leading to the desired file
 file_path = os.path.join(current_directory, "eserc1.txt")
 print(file_path)'''
 
