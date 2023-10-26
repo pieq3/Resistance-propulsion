@@ -38,7 +38,7 @@ RT_M = vasca[:,1]
 # 03 - MODEL data processing
 # --------------------------------------------------------------------------------------------------------------
 Lambda = 24.175         # model-ship ratio
-T_M = 18.3              # average temperature during testing, (degrees Celsius)
+t_M = 18.3              # average temperature during testing, (degrees Celsius)
 rho_M = 998.543         # density; WARNING! Make sure to update viscosity and density values whenever temperature changes
 nu_M = 0.0000010462     # kinematic viscosity, (m^2/s); WARNING! Same as previous line
 g = 9.81                # gravity acceleration, (m/s^2)
@@ -55,7 +55,7 @@ CR_M = CT_M - CF_M
 
 # 04 - SHIP data processing
 # --------------------------------------------------------------------------------------------------------------
-T_S = 15                # average operating temperature, (degrees Celsius)
+t_S = 15                # average operating temperature, (degrees Celsius)
 rho_S = 1026.021        # seawater density, (kg/m^3)
 nu_S = 0.0000011892     # kinematic viscosity, (m^2/s)
 
