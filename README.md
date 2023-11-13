@@ -4,3 +4,4 @@ List of exercises:
 
 1. ITTC '57 procedures with some sample data;
 2. ITTC '78 procedures with some sample data and a comparison with some statistical formulae;
+3. Showing how waves' general formulae come to the Airy model (infinite depth) with high depths (with some significant diagrams);
