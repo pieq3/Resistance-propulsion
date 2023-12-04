@@ -82,8 +82,7 @@ cmap1 = get_cmap(len(d))                    # randomise len(d)-colors, RGB coded
 fig2 = plt.figure(figsize=(8,5))              
 ax = fig2.add_subplot(111)
 for i in range(len(d)):
-    a = 'd = ' + str(d[i])
-    ax.plot(Lambda,omega_w[i], color=cmap1(i) , label = a)
+    ax.plot(Lambda,omega_w[i], color=cmap1(i) , label = f"d = {d[i]}")
 
 ax.set_position( [0.15,0.15,0.8,0.8])
 #ax.set_title('')
@@ -101,9 +100,8 @@ plt.show()
 fig2 = plt.figure(figsize=(8,5))              
 ax = fig2.add_subplot(111)
 for i in range(len(d)):
-    a = 'd = ' + str(d[i])
-    ax.plot(Lambda,c[i], c=cmap1(i), label = a)
-    plt.text(max(Lambda),max(c[i]),' d = ' + str(d[i]), verticalalignment = 'center')
+    ax.plot(Lambda,c[i], c=cmap1(i), label = f"d = {d[i]}")
+    plt.text(max(Lambda),max(c[i]),f" d = {d[i]}", verticalalignment = 'center')
 
 ax.set_position( [0.15,0.15,0.8,0.8])
 #ax.set_title('')
@@ -121,9 +119,8 @@ plt.show()
 fig2 = plt.figure(figsize=(8,6))              
 ax = fig2.add_subplot(111)
 for i in range(len(d)):
-    a = 'd = ' + str(d[i])
-    ax.plot(Lambda,T[i], c=cmap1(i), label = a) 
-    plt.text(max(Lambda),max(T[i]),' d = ' + str(d[i]), verticalalignment = 'center')
+    ax.plot(Lambda,T[i], c=cmap1(i), label = f"d = {d[i]}") 
+    plt.text(max(Lambda),max(T[i]),f" d = {d[i]}", verticalalignment = 'center')
 
 ax.set_position( [0.15,0.15,0.8,0.8])
 #ax.set_title('')
